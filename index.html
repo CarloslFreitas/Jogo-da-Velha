@@ -18,6 +18,7 @@
 		var quemComeca=1;
 		var jogada=0;
 		var cont=0;
+		var contcpu=0;
 
 		function cpuJoga(){
 			if(jogando){
@@ -159,8 +160,8 @@
 				}
 				verifica=verificaVitoria();
 				if(verifica!=""){
-					cont++;
-					alert(verifica+" - CPU venceu"+" _"+"_ "+"CPU pontos: "+cont);
+					contcpu++;
+					alert(verifica+" - CPU venceu"+" _"+"_ "+"CPU pontos: "+contcpu);
 					jogando=false;
 				}
 				atualizaTabuleiro();
